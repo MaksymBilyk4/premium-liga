@@ -49,12 +49,13 @@ const MatchTeams = sequelize.define("match_teams", {
 
 const Tour = sequelize.define("tour", {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    tourNumber: {type: DataTypes.INTEGER, allowNull: false, unique: false},
     date: {type: DataTypes.STRING, allowNull: false},
 });
 
 const Video = sequelize.define("video", {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
-    date: {type: DataTypes.STRING, allowNull: false},
+    title: {type: DataTypes.STRING, allowNull: false, unique: false},
     url: {type: DataTypes.STRING, allowNull: true},
     urlOptional: {type: DataTypes.STRING, allowNull: true},
 });
@@ -85,9 +86,6 @@ Tour.belongsTo(League);
 
 Team.hasMany(Player);
 Player.belongsTo(Team);
-
-Tour.hasMany(Video);
-Video.belongsTo(Tour);
 
 Tour.hasMany(Match);
 Match.belongsTo(Tour);
