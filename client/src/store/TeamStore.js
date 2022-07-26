@@ -1,6 +1,6 @@
 import {makeAutoObservable} from "mobx";
 
-class TeamStore {
+export default class TeamStore {
     constructor() {
         this._teams = [];
         makeAutoObservable(this);
