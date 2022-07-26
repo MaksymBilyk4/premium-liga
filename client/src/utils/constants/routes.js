@@ -1,0 +1,9 @@
+export const ADMIN_ROUTE = "/admin";
+export const HOME_ROUTE = "/";
+export const WORLD_CUP_ROUTE = "/world-cup";
+export const MATCHES_ROUTE = "/matches";
+export const LEAGUES_ROUTE = "/leagues";
+export const TEAMS_ROUTE = "/teams";
+export const CONTACTS_ROUTE = "/contacts";
+export const PLAYERS_ROUTE = "/players";
+export const NOT_FOUND = "/404";
