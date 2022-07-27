@@ -1,1 +1,28 @@
 @import '~antd/dist/antd.css';
+
+.fixed_container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.fullscreen {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.fullscreen__body {
+    flex: 1 1 auto;
+    max-width: 70%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,39 @@
+.subheader__container{
+  background-color: #1c2238;
+  background-image: url("https://ld-wp73.template-help.com/wordpress/prod_25525/v1/wp-content/uploads/2019/11/ball-small.png") ;
+  background-position: 800px 0;
+  background-repeat: no-repeat;
+}
+.subheader__content{
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 0 23px 0;
+  display: flex;
+  flex-direction: column;
+  .content__navigation-link{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #8d919b;
+    padding: 0;
+  }
+  .content__navigation-link:hover{
+    color: #fff;
+  }
+  .content__navigation-theme{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+  }
+  .subheader__title>h2{
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

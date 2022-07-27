@@ -1,14 +1,27 @@
 import React from 'react';
-import {useParams} from "react-router-dom";
-import {observer} from "mobx-react-lite";
 
-const TeamPage = observer(() => {
+import "../assets/css/common.css";
+
+import Subheader from "../components/Subheader";
+import translate from "../i18n/translate";
+import {useParams} from "react-router-dom";
+
+const TeamPage = () => {
     const {id} = useParams();
+
     return (
-        <div>
-            Team {id}
-        </div>
+        <>
+            <Subheader
+                subheaderTheme={` / ${id}`}
+                optSubheaderTheme={translate("navbar.members.teams")}
+                title={translate("subheader.members.aboutTeam")}
+            />
+
+            <div className="container">
+                Team {id}
+            </div>
+        </>
     );
-});
+};
 
 export default TeamPage;

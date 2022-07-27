@@ -1,0 +1,44 @@
+.main-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hello {
+  display: flex;
+  background: linear-gradient(90deg, #181818, #333333, #333333, #333333, #181818);
+}
+
+.hello__image {
+  animation-name: logo-reverb;
+  animation-duration: 2.5s;
+  flex: 0 1 auto;
+  margin: auto !important;
+}
+
+.hello__image img{
+  width: 600px;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes logo-reverb {
+  from{
+    transform: rotate(10deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}

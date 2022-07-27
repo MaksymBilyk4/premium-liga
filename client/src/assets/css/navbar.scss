@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-navbar {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  line-height: 70px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu > .ant-menu-submenu-title {
+  display: flex;
+  align-items: center;
+}
+
