@@ -1,0 +1,257 @@
+.wc-wrapper{
+  margin: 20px 20px 0 20px;
+}
+.anons__content_wrap{
+  display: flex;
+  background-color: rgba(186, 193, 247, 0.2);
+  align-items: center;
+  padding: 10px 0;
+
+  .anons__logo img{
+    min-width: 250px;
+    max-width: 100%;
+  }
+}
+
+.teams{
+  padding: 20px 0 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 30px 30px;
+}
+.teams__wrap{
+  margin: 20px 0 0 0;
+  padding: 0 10px;
+  background-color: rgba(186, 193, 247, 0.2);
+}
+.teams__items{
+  background-color: rgba(186, 193, 247, 0.2);
+  width: 100%;
+  border: 1px dashed #333333;
+  padding: 30px 15px;
+}
+.teams__group{
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+.teams__team{
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+  border: 1px solid #000;
+  min-height: 45px;
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+.team__image{
+  width: 35px;
+  margin: 0 5px 0 0;
+}
+
+.anons{
+  padding: 20px;
+  width: 110%;
+  color: #000;
+}
+
+.info__message{
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.anons__title_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anons__title{
+  color: #135200;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+.anons__message{}
+.anons__infos{
+  padding: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.anons__info{}
+.info__label_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__image{
+  margin: 0 0 0 10px;
+  width: 36px;
+}
+.info__label{
+  color: #003a8c;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.info__text{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+.info__button{
+  text-align: center;
+}
+.anons__message_text{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.regulations{
+  margin: 30px 0 20px 0;
+  padding: 10px;
+  background: rgba(186, 193, 247, 0.2);
+  display: flex;
+  .regulations__title{
+    font-style: italic;
+  }
+  .regulations__video{
+    margin: 0 0 20px 0;
+    flex: 0 1 auto;
+    video{
+      max-height: 650px;
+      outline: none;
+    }
+  }
+  .regulations__content{
+    margin: 0 0 0 20px;
+  }
+  .regulations__list{
+    list-style: none;
+  }
+  .regulations__list li{
+    background: url("../../assets/img/wc-list-item.png") no-repeat;
+    background-size: 25px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    padding-left: 36px;
+    margin: 0 0 20px 0;
+    line-height: 22px;
+  }
+  .regulations__item{}
+  .regulations__item li{}
+}
+
+@media (max-width: 930px) {
+  .regulations__content{
+    margin: 0;
+  }
+  .regulations{
+    flex-direction: column;
+    align-items: center;
+    .regulations__video {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wc-wrapper{
+    margin: 10px 10px 0 10px;
+  }
+  .anons__content_wrap{
+    flex-direction: column;
+  }
+  .teams{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .page-title{
+    margin: 40px 0 20px 0;
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 864px) {
+  .page-title{
+    margin: 30px 0 15px 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+  .anons__title_wrap{
+    flex-direction: column;
+  }
+  .teams{
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px 15px;
+    padding: 20px 0;
+  }
+  .teams__items{
+    padding: 10px;
+  }
+  .teams__group{
+    font-size: 26px;
+  }
+  .teams__team{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    min-height: 40px;
+  }
+
+  .anons{
+    color: #000;
+  }
+  .anons__title{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .anons__message_text{
+    font-size: 18px;
+  }
+  .anons__infos{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info__label{
+    font-size: 24px;
+  }
+  .info__text{
+    font-size: 20px;
+    margin: 2px 0 15px 0;
+    text-align: center;
+    font-style: italic;
+  }
+  .info__button{
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .anons{
+    padding: 0;
+    margin: 15px 10px;
+  }
+  .page-title{
+    font-size: 1.9rem;
+  }
+  .teams{
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 20px 15px;
+    padding: 20px 0;
+  }
+}

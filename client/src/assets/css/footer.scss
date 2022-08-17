@@ -33,54 +33,39 @@
     margin-bottom: 20px;
 
     .socialmedia__link{
-      margin-right: 10px;
+      margin-right: 13px;
+    }
+
+    .link{
+      border-radius: 50% 50% 50% 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+    }
+
+    .link:hover{
+      color: #000;
+      background: #f8f8f9;
     }
 
     .youtube__link{
       color: #fff;
-      width: 20px;
-      height: 20px;
-      padding: 0.5em;
-      border-radius: 50% 50% 50% 50%;
       background: red;
-      transition: 0.5s;
-    }
-
-    .youtube__link:hover{
-      color: #000;
-      background: #f8f8f9;
-      transition: 0.5s;
-      padding: 0.6em;
     }
 
     .instagram__link{
       color: #fff;
-      width: 20px;
-      height: 20px;
-      padding: 0.5em;
-      border-radius: 50% 50% 50% 50%;
       background: #E7476D;
-      transition: 0.5s;
     }
-    .instagram__link:hover{
-      color: #000;
-      background: #f8f8f9;
-      transition: 0.5s;
-      padding: 0.6em;
-    }
+
     .facebook__link{
       color: #fff;
-      padding: 0.5em;
-      border-radius: 50% 50% 50% 50%;
       background: blue;
-      transition: 0.5s;
     }
-    .facebook__link:hover{
-      color: #000;
-      background: #f8f8f9;
-      transition: 0.5s;
-      padding: 0.6em;
-    }
+
   }
 
   .footer__info{

@@ -19,17 +19,17 @@ const Footer = () => {
 
                         <div className="footer__socialmedia">
                             <div className="socialmedia__link">
-                                <a className="instagram__link"
+                                <a className="instagram__link link"
                                    href="https://www.instagram.com/premiumligabcn/?utm_medium=copy_link"
                                    target="_blank"><InstagramOutlined/></a>
                             </div>
                             <div className="socialmedia__link">
-                                <a className="youtube__link"
+                                <a className="youtube__link link"
                                    href="https://www.youtube.com/channel/UCvUqDs20265nmo5SGq-JErA/videos"
                                    target="_blank"><YoutubeOutlined/></a>
                             </div>
                             <div className="socialmedia__link">
-                                <a className="facebook__link"
+                                <a className="facebook__link link"
                                    href="https://www.facebook.com/profile.php?id=100079542447626"
                                    target="_blank"><FacebookOutlined/></a>
                             </div>
