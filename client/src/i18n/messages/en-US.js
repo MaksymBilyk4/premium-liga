@@ -33,6 +33,24 @@ export default {
         "NotFound": {
             "message": "Sorry, the page you visited does not exist.",
             "redirect": "Back to home",
-        }
+        },
+        "footer": {
+            "info": {
+                "followUs": "Follow us on",
+                "leagueLinks": {
+                    "title": "League links",
+                    "worldCup": "WORLD CUP 2022",
+                    "results": "RESULTS",
+                    "tournaments": "TOURNAMENTS",
+                    "players": "PLAYERS",
+                    "contacts": "CONTACT US",
+                }
+            },
+            "main": {
+                "home": "Home",
+                "matches": "Matches",
+                "members": "Members",
+            }
+        },
     }
 }

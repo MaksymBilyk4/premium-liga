@@ -1,0 +1,208 @@
+.footer__section{
+  background-color: #f8f8f9;
+  box-sizing: border-box;
+  padding: 86px 10px 114px 10px;
+}
+.footer__container{
+  margin: 0 auto;
+  max-width: 60%;
+}
+.footer__content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footer__title{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer__title>h2{
+    color: #000000;
+    font-family: "Be Vietnam", Sans-serif, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+
+  .footer__socialmedia{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .socialmedia__link{
+      margin-right: 10px;
+    }
+
+    .youtube__link{
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      padding: 0.5em;
+      border-radius: 50% 50% 50% 50%;
+      background: red;
+      transition: 0.5s;
+    }
+
+    .youtube__link:hover{
+      color: #000;
+      background: #f8f8f9;
+      transition: 0.5s;
+      padding: 0.6em;
+    }
+
+    .instagram__link{
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      padding: 0.5em;
+      border-radius: 50% 50% 50% 50%;
+      background: #E7476D;
+      transition: 0.5s;
+    }
+    .instagram__link:hover{
+      color: #000;
+      background: #f8f8f9;
+      transition: 0.5s;
+      padding: 0.6em;
+    }
+    .facebook__link{
+      color: #fff;
+      padding: 0.5em;
+      border-radius: 50% 50% 50% 50%;
+      background: blue;
+      transition: 0.5s;
+    }
+    .facebook__link:hover{
+      color: #000;
+      background: #f8f8f9;
+      transition: 0.5s;
+      padding: 0.6em;
+    }
+  }
+
+  .footer__info{
+    margin-top: 39px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .footer__info__title{
+      margin-bottom: 20px;
+    }
+    .footer__info__title>h4{
+      color: #1c2238;
+      font-family: "Be Vietnam", Sans-serif, sans-serif;
+      font-size: 20px;
+      font-weight: bold !important;
+    }
+    .footer__list{
+      margin: 0;
+      list-style: none;
+    }
+    .list__item{
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.6;
+      letter-spacing: 0;
+      text-align: left;
+      color: #7e818c;
+      font-family: "Be Vietnam", Sans-serif, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main__footer{
+  background: #fff;
+  padding: 33px 10px 42px 10px;
+  box-sizing: border-box;
+
+  .footer__wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__logo{
+      margin-right: 7%;
+    }
+    .footer__logo>img{
+      width: 100px;
+    }
+
+    .footer__navigation{
+      display: flex;
+      .navigation__link{
+        color: #000;
+        font-family: "Be Vietnam", Sans-serif, sans-serif;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.42em;
+        transition: 0.3s;
+      }
+      .navigation__link:hover{
+        color: #ff5a47;
+      }
+    }
+
+    .footer__copyright{}
+    .footer__copyright>h4{
+      color: #8d919b;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 1026px) {
+  .footer__wrapper{
+    max-width: 100%;
+    display: grid !important;
+    grid-template-areas:
+    " nav nav"
+    " copyright copyright";
+    .footer__logo{
+      display: none;
+    }
+    .footer__navigation{
+      justify-self: center;
+      margin-bottom: 20px;
+      grid-area: nav;
+    }
+    .footer__copyright{
+      text-align: center;
+      grid-area: copyright;
+    }
+  }
+}
+@media (max-width: 585px) {
+  .footer__logo{
+    display: none;
+  }
+  .footer__navigation{
+    justify-self: center;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__copyright{
+    text-align: center;
+    grid-area: copyright;
+  }
+  .footer__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "nav"
+            "copyright";
+  }
+}

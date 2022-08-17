@@ -33,6 +33,24 @@ export default {
         "NotFound": {
             "message": "Lo sentimos, la página que visitaste no existe.",
             "redirect": "Volver a la página de inicio.",
-        }
+        },
+        "footer": {
+            "info": {
+                "followUs": "Siga con nosotros",
+                "leagueLinks": {
+                    "title": "Enlaces de la liga",
+                    "worldCup": "CAMPEONATO DEL MUNDO 2022",
+                    "results": "RESULTADOS",
+                    "tournaments": "TORNEOS",
+                    "players": "JUGADORES",
+                    "contacts": "CONTACTA CON NOSOTROS",
+                }
+            },
+            "main": {
+                "home": "PÁGINA PRINCIPAL",
+                "matches": "CAMPEONATO DEL MUNDO 2022",
+                "members": "PARTICIPANTES",
+            }
+        },
     }
 }
